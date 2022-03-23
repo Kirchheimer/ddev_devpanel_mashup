@@ -7,6 +7,6 @@ jobs:
     steps:
       - name: notify
         run: |
-          curl -s -X PUT https://test.site.devpanel.com/web-hooks/multistack/webhooks/62068113b5f85500153f9393/applications/62068115b5f85500153f9399 \
-            -d '{}'
-            -H "Authorization: Bearer ${{ secrets.DP_TOKEN }}" \
+          curl -s -X PUT https://prod2.site.devpanel.com/webhooks/applications/623a3054ca3f7b0014c5d5e0/git \
+            -d '{}' \
+            -H "Authorization: Bearer ${{ secrets.DP_TOKEN }}"
